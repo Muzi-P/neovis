@@ -3,7 +3,7 @@ export default class App extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			cypher: "MATCH (n)-[r:INTERACTS]->(m) RETURN * Limit 100"
+			cypher: "MATCH p=()-[r:PRODUCED]->() RETURN p LIMIT 25"
 		}
 	}
 	
@@ -17,7 +17,7 @@ export default class App extends Component {
 			server_user: "neo4j",
 			server_password: "140655",
 			labels: {
-				"Character": {
+				"Person": {
 					"caption": "name",
 					"size": "pagerank",
 					"community": "community",
@@ -25,10 +25,20 @@ export default class App extends Component {
 						"name",
 						"pagerank"
 					]
-				}
+				},
+				"Movie": {
+					"caption": "title",
+					"size": "pagerank",
+					"community": "community",
+					"title_properties": [
+						"name",
+						"pagerank"
+					]
+				},
+
 			},
 			relationships: {
-				"INTERACTS": {
+				"PRODUCED": {
 					"thickness": "weight",
 					// "caption": false
 				}
