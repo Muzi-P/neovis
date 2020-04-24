@@ -3,7 +3,7 @@ export default class App extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			cypher: "MATCH p=(:Troll)-[:RETWEETS]->(:Troll)  RETURN p "
+			cypher: "MATCH (n)-[r:INTERACTS]->(m) RETURN * Limit 100"
 		}
 	}
 	
@@ -13,20 +13,24 @@ export default class App extends Component {
    draw = () => {
 		var config = {
 		container_id: "viz",
-			server_url: "bolt://54.144.129.81:32804",
+			server_url: "bolt://localhost:7687",
 			server_user: "neo4j",
-			server_password: "coats-propeller-noises",
+			server_password: "140655",
 			labels: {
-				"User": {
-					"caption": "user_key",
+				"Character": {
+					"caption": "name",
 					"size": "pagerank",
-					"community": "community"
+					"community": "community",
+					"title_properties": [
+						"name",
+						"pagerank"
+					]
 				}
 			},
 			relationships: {
-				"POSTED": {
-					caption: false,
-					thickness: "count",
+				"INTERACTS": {
+					"thickness": "weight",
+					// "caption": false
 				}
 			},
 			initial_cypher: this.state.cypher
