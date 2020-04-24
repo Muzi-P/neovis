@@ -1,26 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+export default class App extends Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			cypher: "MATCH p=(:Troll)-[:RETWEETS]->(:Troll)  RETURN p "
+		}
+	}
+	
+  componentDidMount = () => {
+    this.draw();
+  };
+   draw = () => {
+		var config = {
+		container_id: "viz",
+			server_url: "bolt://54.144.129.81:32804",
+			server_user: "neo4j",
+			server_password: "coats-propeller-noises",
+			labels: {
+				"User": {
+					"caption": "user_key",
+					"size": "pagerank",
+					"community": "community"
+				}
+			},
+			relationships: {
+				"POSTED": {
+					caption: false,
+					thickness: "count",
+				}
+			},
+			initial_cypher: this.state.cypher
+		}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+		var viz = new window.NeoVis.default(config);
+		viz.render();
+	}
+
+	handleChange = (e) => {
+		this.setState({
+			[e.target.id] : e.target.value
+		})
+	}
+
+	handleClick = (e) => {
+		this.draw();
+	}
+
+  render() {
+    return (
+      <div className="App">
+		<div className="header"> Neo4j with Neovis.js</div>
+		<div className="add">
+			<textarea name="" id="cypher" col = "5" onChange = {this.handleChange} ></textarea>
+			<button type="button" onClick={this.handleClick}>Submit</button>
+		</div>
+        <div  className = "content" id="viz"></div>
+      </div>
+    );
+  }
 }
-
-export default App;
