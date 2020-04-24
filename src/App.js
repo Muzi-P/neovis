@@ -20,7 +20,7 @@ export default class App extends Component {
 				"Person": {
 					"caption": "name",
 					"size": "pagerank",
-					"community": "community",
+					// "community": "community",
 					"title_properties": [
 						"name",
 						"pagerank"
@@ -29,7 +29,7 @@ export default class App extends Component {
 				"Movie": {
 					"caption": "title",
 					"size": "pagerank",
-					"community": "community",
+					// "community": "community",
 					"title_properties": [
 						"name",
 						"pagerank"
