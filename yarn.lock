@@ -898,6 +898,14 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime-corejs3@^7.8.4":
+  version "7.15.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.15.3.tgz#28754263988198f2a928c09733ade2fb4d28089d"
+  integrity sha512-30A3lP+sRL6ml8uhoJSs+8jwpKzbw8CqBvDc1laeptxPm5FahumJxirigcbD2qTs71Sonvj1cyZB0OKGAmxQ+A==
+  dependencies:
+    core-js-pure "^3.16.0"
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@7.9.0", "@babel/runtime@^7.0.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.9.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.0.tgz#337eda67401f5b066a6f205a3113d4ac18ba495b"
@@ -909,6 +917,13 @@
   version "7.9.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
   integrity sha512-NE2DtOdufG7R5vnfQUTehdTfNycfUANEtCa9PssN9O/xmTzP4E08UI797ixaei6hBEVL9BI/PsdJS5x7mWoB9Q==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.5.5":
+  version "7.15.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.3.tgz#2e1c2880ca118e5b2f9988322bd8a7656a32502b"
+  integrity sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2065,6 +2080,13 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.9.1.tgz#7e33d8f7d449b3f673cd72deb9abdc552dbe528e"
   integrity sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
 
+axios@^0.19.2:
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+  dependencies:
+    follow-redirects "1.5.10"
+
 axobject-query@^2.0.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.1.2.tgz#2bdffc0371e643e5f03ba99065d5179b9ca79799"
@@ -3016,6 +3038,11 @@ core-js-pure@^3.0.0:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.6.4.tgz#4bf1ba866e25814f149d4e9aaa08c36173506e3a"
   integrity sha512-epIhRLkXdgv32xIUFaaAry2wdxZYBi6bgM7cB136dzzXXa+dFyRLTZeLUJxnd8ShrmyVXBub63n2NHo2JAt8Cw==
 
+core-js-pure@^3.16.0:
+  version "3.16.1"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.16.1.tgz#b997df2669c957a5b29f06e95813a171f993592e"
+  integrity sha512-TyofCdMzx0KMhi84mVRS8rL1XsRk2SPUNz2azmth53iRN0/08Uim9fdhQTaZTG1LqaXHYVci4RDHka6WrXfnvg==
+
 core-js@^2.4.0:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
@@ -3376,6 +3403,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
+  dependencies:
+    ms "2.0.0"
+
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   dependencies:
     ms "2.0.0"
 
@@ -4433,6 +4467,13 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  dependencies:
+    debug "=3.1.0"
 
 follow-redirects@^1.0.0:
   version "1.10.0"
@@ -6770,6 +6811,39 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
+neo4j-driver-bolt-connection@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/neo4j-driver-bolt-connection/-/neo4j-driver-bolt-connection-4.3.2.tgz#5cce9f6b9275d97bc51106440c2f3c6ce4f1bc48"
+  integrity sha512-Jhgs5VDj0+xJsmnjl3ph9tddBR8SLfqOV9h3hAFdehGIXU1GvMBoamnsymgfWPrf1XF05I9QZK5TG+rPVlbvPg==
+  dependencies:
+    neo4j-driver-core "^4.3.2"
+    text-encoding-utf-8 "^1.0.2"
+
+neo4j-driver-core@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/neo4j-driver-core/-/neo4j-driver-core-4.3.2.tgz#18cdbf43a63b324914a56d1fec54acd41b1a01f3"
+  integrity sha512-RFQAnIz/osp63msghEU1yNKZJOpyu99Ch/DU15o+RvdYTgvReewWXoThadnCzqfcuCrNqAq2lMC3SxDO284aSw==
+
+neo4j-driver@^4.1.0:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/neo4j-driver/-/neo4j-driver-4.3.2.tgz#5f5fc91f5b2496f7eb7917a69d8a101c13af01bc"
+  integrity sha512-upU+EP3rEH029+2XBDG9GF406IILdckUx8D6oTyuIaH+La0aFI5Q8F52bXLDUVt9tmPx7GKO4kyb7EQSty4B9g==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    neo4j-driver-bolt-connection "^4.3.2"
+    neo4j-driver-core "^4.3.2"
+    rxjs "^6.6.3"
+
+neovis.js@^1.4.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/neovis.js/-/neovis.js-1.6.0.tgz#099867f1fd649f093248adaeb38263c4dffca02d"
+  integrity sha512-SqDilnR9A5T5F+34u/az7PII79Bb3mCoa9ERYYiIzfGeLkWnAQZuOYaf3Xo5yeUNC6yixFm5DQH+430LS7N7Wg==
+  dependencies:
+    "@babel/runtime-corejs3" "^7.8.4"
+    neo4j-driver "^4.1.0"
+    vis-data "^7.0.0"
+    vis-network "^7.3.5"
+
 next-tick@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
@@ -7352,9 +7426,9 @@ path-key@^3.1.0:
   integrity sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -8943,6 +9017,13 @@ rxjs@^6.5.3:
   dependencies:
     tslib "^1.9.0"
 
+rxjs@^6.6.3:
+  version "6.6.7"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
+  integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
+  dependencies:
+    tslib "^1.9.0"
+
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
@@ -9793,6 +9874,11 @@ test-exclude@^5.2.3:
     read-pkg-up "^4.0.0"
     require-main-filename "^2.0.0"
 
+text-encoding-utf-8@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/text-encoding-utf-8/-/text-encoding-utf-8-1.0.2.tgz#585b62197b0ae437e3c7b5d0af27ac1021e10d13"
+  integrity sha512-8bw4MY9WjdsD2aMtO0OzOCY3pXGYNx2d2FfHRVUKkiCPDWjKuOlhLVASS+pD7VkLTVjW268LYJHwsnPFlBpbAg==
+
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
@@ -10191,6 +10277,16 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+vis-data@^7.0.0:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-7.1.2.tgz#b7d076ac79cb54f7c5e9c80f5b03b93cc8cc1fda"
+  integrity sha512-RPSegFxEcnp3HUEJSzhS2vBdbJ2PSsrYYuhRlpHp2frO/MfRtTYbIkkLZmPkA/Sg3pPfBlR235gcoKbtdm4mbw==
+
+vis-network@^7.3.5:
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/vis-network/-/vis-network-7.10.2.tgz#b318f1907cf006d9640c4c31a262e0782405a3cf"
+  integrity sha512-KDx2agbDnaiE0Bye4AcCRqTn5mxzDKhdUNpKkzSn0AOLBmdhNtPGjxAFluAmvFVyiSK5R6Q5KIWdLjeIMu/PAQ==
 
 vm-browserify@^1.0.1:
   version "1.1.2"
